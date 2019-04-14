@@ -184,7 +184,7 @@ class Comparison extends Algorithm
     {
         $requiredMatchItems = [];
 
-        if($this->getRequiredPropQty() > 0 && $this->getMatchingItems() > 0) {
+        if($this->getRequiredPropQty() > 0 && $this->getMatchedPropQty() > 0) {
 
             $requiredMatchItems = array_uintersect($this->getRequiredItems(), $this->getMatchingItems(), function($val1, $val2) {
                 return strcmp($val1['id'], $val2['id']);

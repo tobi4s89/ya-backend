@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cfa5c7-50b8-41eb-84b5-a5b752feb273" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Controllers/AlgorithmController.php" afterPath="$PROJECT_DIR$/app/Api/Controllers/AlgorithmController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Controllers/PropertyController.php" afterPath="$PROJECT_DIR$/app/Api/Controllers/PropertyController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Api/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Api/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Comparison.php" afterPath="$PROJECT_DIR$/app/Comparison.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +36,8 @@
       <file leaf-file-name="Comparison.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Comparison.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="260" column="6" lean-forward="false" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
+            <state relative-caret-position="426">
+              <caret line="284" column="86" lean-forward="false" selection-start-line="284" selection-start-column="86" selection-end-line="284" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -52,7 +46,7 @@
       <file leaf-file-name="AlgorithmController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Api/Controllers/AlgorithmController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="370">
               <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="60" />
               <folding />
             </state>
@@ -175,8 +169,8 @@
       <find>dd(</find>
       <find>$key</find>
       <find>getMatchedPropQty</find>
-      <find>getMatchingItems</find>
       <find>getCorrectionValue</find>
+      <find>getMatchingItems</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vendor/spatie</dir>
@@ -224,9 +218,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1114" />
+    <option name="height" value="1113" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -333,12 +327,12 @@
       <workItem from="1555018972916" duration="5647000" />
       <workItem from="1555029543674" duration="1378000" />
       <workItem from="1555104640741" duration="6051000" />
-      <workItem from="1555201094567" duration="2085000" />
+      <workItem from="1555201094567" duration="4671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70769000" />
+    <option name="totallyTimeSpent" value="73355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1113" extended-state="6" />
@@ -716,7 +710,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Api/Controllers/AlgorithmController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="370">
           <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="60" />
           <folding />
         </state>
@@ -724,8 +718,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Comparison.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="260" column="6" lean-forward="false" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
+        <state relative-caret-position="426">
+          <caret line="284" column="86" lean-forward="false" selection-start-line="284" selection-start-column="86" selection-end-line="284" selection-end-column="86" />
           <folding />
         </state>
       </provider>
