@@ -28,10 +28,11 @@ class PropertyController extends Controller
      */
     public function store(Request $request)
     {
-        Property::create($request->all());
+        $property = Property::create($request->all());
 
         return response()->json([
-            'status' => 'success'
+            'status' => 'success',
+            'propertyId' => $property->id
         ]);
     }
 

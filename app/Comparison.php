@@ -107,6 +107,7 @@ class Comparison extends Algorithm
     /**
      * Haal alle overeenkomende items op van beide users
      *
+     * @return array $items
      */
     public function getMatchingItems()
     {
@@ -124,11 +125,7 @@ class Comparison extends Algorithm
             }
         }
 
-        if(!empty($items)) {
-            return $items;
-        }
-
-        return false;
+        return $items;
     }
 
 
@@ -187,7 +184,7 @@ class Comparison extends Algorithm
     {
         $requiredMatchItems = [];
 
-        if($this->getRequiredPropQty() > 0 && $this->getMatchingItems()) {
+        if($this->getRequiredPropQty() > 0 && $this->getMatchingItems() > 0) {
 
             $requiredMatchItems = array_uintersect($this->getRequiredItems(), $this->getMatchingItems(), function($val1, $val2) {
                 return strcmp($val1['id'], $val2['id']);
@@ -205,10 +202,9 @@ class Comparison extends Algorithm
     /**
      * Haal correctiewaarde op t.o.v. algoritme
      *
-     * @param string $totalPropValue
-     *  Waarde wordt berekend in getScore()
+     * @param int $totalPropValue
      *
-     * @return string
+     * @return int $value
      */
     public function getCorrectionValue($totalPropValue)
     {
@@ -227,9 +223,8 @@ class Comparison extends Algorithm
     /**
      * Haal de boostwaarde op
      *
-     * @param string $remainValue
+     * @param int $remainValue
      * @param int $requiredQty
-     * Waarde is op te halen met getRequiredPropQty
      *
      * @return int $value
      */
@@ -251,7 +246,7 @@ class Comparison extends Algorithm
      * @param int $correctionValue
      * @param int $totalMustValue
      *
-     * @return Integer
+     * @return int $value
      */
     public function getTotalValue($correctionValue, $totalMustValue)
     {
@@ -264,17 +259,11 @@ class Comparison extends Algorithm
     /**
      * Bereken de totaalwaarde t.o.v. algoritme
      *
-     * Als VERPLICHTE overeenkomende items van eerste partij
-     * overeenkomen met de tweede partij
-     * @return String
-     *
-     * Als VERPLICHTE overeenkomende items van eerste partij
-     * niet overeenkomen met de tweede partij
-     *
-     * @return Boolean
+     * @return int $totalValue
      */
     public function getScore()
     {
+        $totalValue = 0;
 
         if($this->hasMatchedRequirements()) {
             $propQty = $this->getPropQty();
@@ -295,10 +284,8 @@ class Comparison extends Algorithm
             $remainValue = self::FULLVALUE - $correctionValue;
             $totalMustValue = $this->getTotalRequiredValue($remainValue, $propQtyMust);
             $totalValue = $this->getTotalValue($correctionValue, $totalMustValue);
-
-            return $totalValue;
         }
 
-        return false;
+        return $totalValue;
     }
 }

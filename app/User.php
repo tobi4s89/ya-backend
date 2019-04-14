@@ -10,8 +10,10 @@ class User extends Model
 
     protected $fillable = ['name'];
 
+    protected $hidden = ['created_at', 'deleted_at', 'updated_at'];
+
     public function properties()
     {
-        return $this->belongsToMany(Property::class, 'user_properties')->withTimestamps()->withPivot(['position', 'required']);
+        return $this->belongsToMany(Property::class, 'user_properties')->withPivot(['position', 'required']);
     }
 }

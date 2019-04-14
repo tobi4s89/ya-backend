@@ -16,8 +16,8 @@ class AlgorithmController extends Controller
      */
     public function calculate(Request $request)
     {
-        $firstUser = $request->header('first-user-id');
-        $secondUser = $request->header('second-user-id');
+        $firstUser = $request->query('first_user_id');
+        $secondUser = $request->query('second_user_id');
 
         $comparison = Algorithm::compare($firstUser, $secondUser);
 
@@ -25,6 +25,7 @@ class AlgorithmController extends Controller
             'score' => $comparison->getScore(),
             'firstUser' => $comparison->getNameFirstUser(),
             'secondUser' => $comparison->getNameSecondUser(),
+            'matchingItems' => $comparison->getMatchingItems()
         ];
 
         return response()->json($data, 200);
