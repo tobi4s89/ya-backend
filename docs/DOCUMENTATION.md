@@ -1,4 +1,4 @@
-## Documentation Yonego/Bambelo assignment
+## Documentation Yonego assignment back-end
 
 #### Install and manage project
 
