@@ -10,7 +10,7 @@ class User extends Model
 
     protected $fillable = ['name'];
 
-    protected $hidden = ['created_at', 'deleted_at', 'updated_at'];
+    protected $hidden = ['created_at', 'updated_at'];
 
     public function properties()
     {
