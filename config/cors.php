@@ -11,12 +11,12 @@ return [
     | to accept any value.
     |
     */
-   
+
     'supportsCredentials' => false,
-    'allowedOrigins' => ['*'],
+    'allowedOrigins' => ['http://localhost:4200', 'https://www.yonego.itsallyours.nl'],
     'allowedOriginsPatterns' => [],
-    'allowedHeaders' => ['*'],
-    'allowedMethods' => ['*'],
+    'allowedHeaders' => ['Origin', 'Content-Type', 'Authorization'],
+    'allowedMethods' => ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     'exposedHeaders' => [],
     'maxAge' => 0,
 
