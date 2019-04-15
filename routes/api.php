@@ -11,15 +11,17 @@
 |
 */
 
-// User resource
-Route::get('/users', 'UserController@index')->middleware(\Barryvdh\Cors\HandleCors::class);
-Route::post('/users', 'UserController@store')->middleware(\Barryvdh\Cors\HandleCors::class);
-Route::delete('/users/{user}', 'UserController@destroy')->middleware(\Barryvdh\Cors\HandleCors::class);
+Route::group(['middleware' => []], function () {
+    // User resource
+    Route::get('/users', 'UserController@index');
+    Route::post('/users', 'UserController@store');
+    Route::delete('/users/{user}', 'UserController@destroy');
 
-// Property resource
-Route::get('/properties', 'PropertyController@index')->middleware(\Barryvdh\Cors\HandleCors::class);
-Route::post('/properties', 'PropertyController@store')->middleware(\Barryvdh\Cors\HandleCors::class);
-Route::delete('/properties/{property}', 'PropertyController@destroy')->middleware(\Barryvdh\Cors\HandleCors::class);
+    // Property resource
+    Route::get('/properties', 'PropertyController@index');
+    Route::post('/properties', 'PropertyController@store');
+    Route::delete('/properties/{property}', 'PropertyController@destroy');
 
-// Calculate resource
-Route::get('/calculate', 'AlgorithmController@calculate')->middleware(\Barryvdh\Cors\HandleCors::class);
+    // Calculate resource
+    Route::get('/calculate', 'AlgorithmController@calculate');
+});
