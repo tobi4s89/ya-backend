@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a33c67320d38b222ea922a077acf2ec3",
+    "content-hash": "2290560240eeb26946765fb34bf881c5",
     "packages": [
+        {
+            "name": "aidantwoods/secureheaders",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aidantwoods/SecureHeaders.git",
+                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aidantwoods/SecureHeaders/zipball/f60c3b752114036fbf621a813ead3c3dc7b4c34a",
+                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "dev-feature/braces/position_after_return_type_hint",
+                "phpunit/phpunit": "^4.0",
+                "psr/http-message": "^1.0",
+                "zendframework/zend-diactoros": "^1.0"
+            },
+            "suggest": {
+                "aidantwoods/markdownphpdocs": "Install this on its own and add it to your path, to auto-generate documentation if contributing to this repo.",
+                "psr/http-message": "In case you want to use the PSR-7 adapter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aidantwoods\\SecureHeaders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aidan Woods",
+                    "email": "aidantwoods@gmail.com",
+                    "homepage": "https://aidanwoods.com"
+                }
+            ],
+            "description": "A PHP class aiming to make the use of browser security features more accessible.",
+            "homepage": "https://github.com/aidantwoods/SecureHeaders/wiki",
+            "keywords": [
+                "content-security-policy",
+                "cookie",
+                "csp",
+                "headers",
+                "hsts",
+                "secure",
+                "secureheaders"
+            ],
+            "time": "2017-08-28T15:41:23+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
@@ -119,70 +176,6 @@
                 "laravel"
             ],
             "time": "2019-02-26T18:08:30+00:00"
-        },
-        {
-            "name": "bepsvpt/secure-headers",
-            "version": "5.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/BePsvPT/secure-headers.git",
-                "reference": "f45d2c216b85a89c41312449542c47e94a35bff8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/BePsvPT/secure-headers/zipball/f45d2c216b85a89c41312449542c47e94a35bff8",
-                "reference": "f45d2c216b85a89c41312449542c47e94a35bff8",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "~5.1",
-                "php": "^7.0"
-            },
-            "require-dev": {
-                "ext-xdebug": "*",
-                "orchestra/testbench": "~3.1",
-                "phpstan/phpstan": "~0.7",
-                "phpunit/phpunit": "~5.7|~6.5|~7.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Bepsvpt\\SecureHeaders\\SecureHeadersServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Bepsvpt\\SecureHeaders\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "BePsvPT",
-                    "email": "bepsvpt@protonmail.com"
-                }
-            ],
-            "description": "Add security related headers to HTTP response. The package includes Service Providers for easy Laravel integration.",
-            "homepage": "https://github.com/BePsvPT/secure-headers",
-            "keywords": [
-                "clear-site-data",
-                "content-security-policy",
-                "csp",
-                "except-ct",
-                "feature-policy",
-                "header",
-                "hpkp",
-                "hsts",
-                "https",
-                "laravel",
-                "referrer-policy"
-            ],
-            "time": "2019-02-28T03:15:34+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -994,6 +987,54 @@
                 "rest"
             ],
             "time": "2017-06-12T11:04:56+00:00"
+        },
+        {
+            "name": "mikefrancis/laravel-secureheaders",
+            "version": "v1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikefrancis/laravel-secureheaders.git",
+                "reference": "236b91690ad885cff17cf512147b2517eee28bd2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikefrancis/laravel-secureheaders/zipball/236b91690ad885cff17cf512147b2517eee28bd2",
+                "reference": "236b91690ad885cff17cf512147b2517eee28bd2",
+                "shasum": ""
+            },
+            "require": {
+                "aidantwoods/secureheaders": "^2.0",
+                "illuminate/http": "^5.4",
+                "php": "7.x"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MikeFrancis\\LaravelSecureHeaders\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MikeFrancis\\LaravelSecureHeaders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Francis",
+                    "email": "mikeffrancis@gmail.com"
+                }
+            ],
+            "description": "SecureHeaders wrapper for Laravel.",
+            "time": "2018-02-22T09:25:12+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2995,6 +3036,70 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "bepsvpt/secure-headers",
+            "version": "5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BePsvPT/secure-headers.git",
+                "reference": "f45d2c216b85a89c41312449542c47e94a35bff8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BePsvPT/secure-headers/zipball/f45d2c216b85a89c41312449542c47e94a35bff8",
+                "reference": "f45d2c216b85a89c41312449542c47e94a35bff8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "ext-xdebug": "*",
+                "orchestra/testbench": "~3.1",
+                "phpstan/phpstan": "~0.7",
+                "phpunit/phpunit": "~5.7|~6.5|~7.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bepsvpt\\SecureHeaders\\SecureHeadersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bepsvpt\\SecureHeaders\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "BePsvPT",
+                    "email": "bepsvpt@protonmail.com"
+                }
+            ],
+            "description": "Add security related headers to HTTP response. The package includes Service Providers for easy Laravel integration.",
+            "homepage": "https://github.com/BePsvPT/secure-headers",
+            "keywords": [
+                "clear-site-data",
+                "content-security-policy",
+                "csp",
+                "except-ct",
+                "feature-policy",
+                "header",
+                "hpkp",
+                "hsts",
+                "https",
+                "laravel",
+                "referrer-policy"
+            ],
+            "time": "2019-02-28T03:15:34+00:00"
+        },
         {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.2.2",
