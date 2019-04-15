@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47cfa5c7-50b8-41eb-84b5-a5b752feb273" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/DOCUMENTATION.md" afterPath="$PROJECT_DIR$/docs/DOCUMENTATION.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/QUICK_START.md" afterPath="$PROJECT_DIR$/docs/QUICK_START.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,7 +80,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="0">
-                <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+                <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -245,8 +244,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/docs/QUICK_START.md" />
         <option value="$PROJECT_DIR$/docs/DOCUMENTATION.md" />
+        <option value="$PROJECT_DIR$/docs/QUICK_START.md" />
       </list>
     </option>
   </component>
@@ -357,7 +356,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93159000" />
+    <option name="totallyTimeSpent" value="93283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="23" width="1920" height="993" extended-state="6" />
@@ -760,7 +759,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
-            <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+            <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
             <folding />
           </first_editor>
           <second_editor />

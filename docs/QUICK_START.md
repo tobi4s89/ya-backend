@@ -1,4 +1,4 @@
-## Quick start Yonego assignment back-end
+## Quick start Yonego assignment
 
 #### Add properties
 
@@ -14,7 +14,7 @@ To match users you have to press the start button, and select the right users. C
 
 #### Reports
 
-A match you do not want to forget? You can save them in your browser data. To review a list of your saved reports you can click on the 'Bekijk rapportages' button.
+A match you do not want to forget? You can save them in your browser data. By clicking on the 'Bekijk rapportages' button you can review a list of your saved reports.
 
 #### Algorithm examples
 
