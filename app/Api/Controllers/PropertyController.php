@@ -28,7 +28,9 @@ class PropertyController extends Controller
      */
     public function store(Request $request)
     {
-        $property = Property::create($request->all());
+        $property = Property::create([
+            'name' => $request->input('name')
+        ]);
 
         return response()->json([
             'status' => 'success',

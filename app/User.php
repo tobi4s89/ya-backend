@@ -14,6 +14,6 @@ class User extends Model
 
     public function properties()
     {
-        return $this->belongsToMany(Property::class, 'user_properties')->withPivot(['position', 'required']);
+        return $this->belongsToMany(Property::class, 'user_properties')->withTimestamps()->withPivot(['position', 'required']);
     }
 }

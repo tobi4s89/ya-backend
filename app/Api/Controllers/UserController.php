@@ -2,7 +2,6 @@
 
 namespace App\Api\Controllers;
 
-use App\Property;
 use App\User;
 use App\UserProperty;
 use App\Http\Controllers\Controller;
