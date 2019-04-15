@@ -11,15 +11,17 @@
 |
 */
 
-// User resource
-Route::get('/users', 'UserController@index');
-Route::post('/users', 'UserController@store');
-Route::delete('/users/{user}', 'UserController@destroy');
+Route::middleware('cors')->group(function () {
+    // User resource
+    Route::get('/users', 'UserController@index');
+    Route::post('/users', 'UserController@store');
+    Route::delete('/users/{user}', 'UserController@destroy');
 
-// Property resource
-Route::get('/properties', 'PropertyController@index');
-Route::post('/properties', 'PropertyController@store');
-Route::delete('/properties/{property}', 'PropertyController@destroy');
+    // Property resource
+    Route::get('/properties', 'PropertyController@index');
+    Route::post('/properties', 'PropertyController@store');
+    Route::delete('/properties/{property}', 'PropertyController@destroy');
 
-// Calculate resource
-Route::get('/calculate', 'AlgorithmController@calculate');
+    // Calculate resource
+    Route::get('/calculate', 'AlgorithmController@calculate');
+});
