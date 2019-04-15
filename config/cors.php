@@ -13,7 +13,7 @@ return [
     */
 
     'supportsCredentials' => false,
-    'allowedOrigins' => ['http://localhost:4200', 'https://www.yonego.itsallyours.nl'],
+    'allowedOrigins' => ['http://localhost:8080', 'https://www.yonego.itsallyours.nl'],
     'allowedOriginsPatterns' => [],
     'allowedHeaders' => ['Origin', 'Content-Type', 'Authorization'],
     'allowedMethods' => ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
