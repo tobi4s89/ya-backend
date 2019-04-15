@@ -2,7 +2,7 @@
 
 #### Install and manage project
 
-Laravel Valet is one of the recommended virtual machines (https://laravel.com/docs/5.8/valet). Ensure that you have installed composer on your local system (https://getcomposer.org/doc/00-intro.md). 
+[Laravel Valet](https://laravel.com/docs/5.8/valet) is one of the recommended virtual machines. Ensure that you have installed [Composer](https://getcomposer.org/doc/00-intro.md) on your local system. 
     
 #### Implement Git repository to your own project root folder
 
@@ -37,7 +37,7 @@ Copy the .env.example file, which can be found in the root folder, and rename it
     
 #### Dependencies
 
-https://github.com/tobi4s89/ya-frontend
+[Yonego assignment Front-end](https://github.com/tobi4s89/ya-frontend)
 
 ## Project information
 

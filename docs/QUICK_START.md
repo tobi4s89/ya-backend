@@ -18,12 +18,11 @@ A match you do not want to forget? You can save them in your browser data. To re
 
 #### Algorithm examples
 
+[Example 1](https://www.itsallyours.nl/pdf/alg_vb1.pdf)
 
-Example 1: https://www.itsallyours.nl/pdf/alg_vb1.pdf
+[Example 2](https://www.itsallyours.nl/pdf/alg_vb2.pdf)
 
-Example 2: https://www.itsallyours.nl/pdf/alg_vb2.pdf
-
-Example 3: https://www.itsallyours.nl/pdf/alg_vb3.pdf
+[Example 3](https://www.itsallyours.nl/pdf/alg_vb3.pdf)
 
 
 
