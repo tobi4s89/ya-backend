@@ -4,65 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2290560240eeb26946765fb34bf881c5",
+    "content-hash": "7f82c320743498ad75a445c15a2e6af9",
     "packages": [
-        {
-            "name": "aidantwoods/secureheaders",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aidantwoods/SecureHeaders.git",
-                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/aidantwoods/SecureHeaders/zipball/f60c3b752114036fbf621a813ead3c3dc7b4c34a",
-                "reference": "f60c3b752114036fbf621a813ead3c3dc7b4c34a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "dev-feature/braces/position_after_return_type_hint",
-                "phpunit/phpunit": "^4.0",
-                "psr/http-message": "^1.0",
-                "zendframework/zend-diactoros": "^1.0"
-            },
-            "suggest": {
-                "aidantwoods/markdownphpdocs": "Install this on its own and add it to your path, to auto-generate documentation if contributing to this repo.",
-                "psr/http-message": "In case you want to use the PSR-7 adapter"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Aidantwoods\\SecureHeaders\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aidan Woods",
-                    "email": "aidantwoods@gmail.com",
-                    "homepage": "https://aidanwoods.com"
-                }
-            ],
-            "description": "A PHP class aiming to make the use of browser security features more accessible.",
-            "homepage": "https://github.com/aidantwoods/SecureHeaders/wiki",
-            "keywords": [
-                "content-security-policy",
-                "cookie",
-                "csp",
-                "headers",
-                "hsts",
-                "secure",
-                "secureheaders"
-            ],
-            "time": "2017-08-28T15:41:23+00:00"
-        },
         {
             "name": "asm89/stack-cors",
             "version": "1.2.0",
@@ -987,54 +930,6 @@
                 "rest"
             ],
             "time": "2017-06-12T11:04:56+00:00"
-        },
-        {
-            "name": "mikefrancis/laravel-secureheaders",
-            "version": "v1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikefrancis/laravel-secureheaders.git",
-                "reference": "236b91690ad885cff17cf512147b2517eee28bd2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikefrancis/laravel-secureheaders/zipball/236b91690ad885cff17cf512147b2517eee28bd2",
-                "reference": "236b91690ad885cff17cf512147b2517eee28bd2",
-                "shasum": ""
-            },
-            "require": {
-                "aidantwoods/secureheaders": "^2.0",
-                "illuminate/http": "^5.4",
-                "php": "7.x"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MikeFrancis\\LaravelSecureHeaders\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MikeFrancis\\LaravelSecureHeaders\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Francis",
-                    "email": "mikeffrancis@gmail.com"
-                }
-            ],
-            "description": "SecureHeaders wrapper for Laravel.",
-            "time": "2018-02-22T09:25:12+00:00"
         },
         {
             "name": "monolog/monolog",
